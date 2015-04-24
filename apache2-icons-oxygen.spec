@@ -18,7 +18,7 @@
 
 
 Name:           apache2-icons-oxygen
-Version:        1.0.0  
+Version:        1.0.1  
 Release:        1
 Summary:        Oxygen icons for Apache 2 
 License:        LGPL-3.0
