@@ -23,6 +23,7 @@ Release:        1
 Summary:        Oxygen icons for Apache 2 
 License:        LGPL-3.0
 Group:          Productivity/Networking/Web/Servers
+Url:            https://github.com/javierllorente/apache2-icons-oxygen
 Source:         %{name}-%{version}.tar.gz  
 BuildArch:      noarch 
 BuildRequires:  apache2-devel
