@@ -49,7 +49,7 @@ cp mod_autoindex-defaults-oxygen.conf $RPM_BUILD_ROOT%{apache_sysconfdir}
 
 %files  
 %defattr(-,root,root)  
-%doc README.SuSE COPYING
+%doc README.openSUSE COPYING
 %dir %{apache_sysconfdir}
 %config(noreplace) %{apache_sysconfdir}/mod_autoindex-defaults-oxygen.conf
 %{_datadir}/apache2 
