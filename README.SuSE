@@ -1,0 +1,47 @@
+apache2-icons-oxygen
+
+Author: Javier Llorente <javier@opensuse.org>
+URL: https://build.opensuse.org/package/show?package=apache2-icons-oxygen&project=Apache
+License: LGPLv3
+Based on Oxygen and Crystal icons
+http://www.oxygen-icons.org/
+http://www.everaldo.com/crystal/
+
+-----------------------------------------------------------------------------------------
+You may enable this collection of icons Apache-wide and/or Virtual host-based:
+
+- Apache-wide
+Add
+Include /etc/apache2/mod_autoindex-defaults-oxygen.conf
+to /etc/apache2/httpd.conf. Do not forget to comment the line
+Include /etc/apache2/mod_autoindex-defaults.conf
+
+and comment the following as well in /etc/apache2/default-server.conf
+Alias /icons/ "/usr/share/apache2/icons/"
+<Directory "/usr/share/apache2/icons">
+        Options Indexes MultiViews
+        AllowOverride None
+        Order allow,deny
+        Allow from all
+</Directory>
+
+Finally, reload/restart Apache by issuing a 
+service apache2 reload
+or
+service apache2 restart
+
+
+- Virtual hosts
+Add
+Include /etc/apache2/mod_autoindex-defaults-oxygen.conf
+to your virtual host configuration file (usually located under /etc/apache2/vhosts.d/).
+
+Finally, reload/restart Apache by issuing a
+service apache2 reload
+or
+service apache2 restart
+
+
+Have a lot of fun,
+Your openSUSE Team
+
